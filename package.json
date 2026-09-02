@@ -1,0 +1,31 @@
+{
+  "name": "qoder-yzj-bridge",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local QoderCLI bridge for Yunzhijia (云之家) robot messages.",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "main": "src/index.ts",
+  "bin": {
+    "qoder-yzj-bridge": "src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test --experimental-strip-types 'test/**/*.test.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.0",
+    "typescript": "^5.7.0"
+  },
+  "files": [
+    "src/**/*",
+    "package.json",
+    "README.md",
+    "config.example.json"
+  ]
+}

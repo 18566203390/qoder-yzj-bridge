@@ -1,0 +1,9 @@
+# 运行时配置（含机器人 Token，禁止提交）
+config.json
+
+# 本地状态目录
+.qoder-yzj-bridge/
+
+# 依赖与系统文件
+node_modules/
+.DS_Store

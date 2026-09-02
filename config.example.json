@@ -1,0 +1,22 @@
+{
+  "qodercliPath": "/usr/local/bin/qodercli",
+  "cwd": "/Users/wulonglong/qoder-workspaces/yzj-bridge",
+  "projects": [
+    { "alias": "bridge", "cwd": "/Users/wulonglong/qoder-workspaces/yzj-bridge" },
+    { "alias": "api", "cwd": "/Users/wulonglong/qoder-workspaces/api" }
+  ],
+  "registryPath": "/Users/wulonglong/.qoder-yzj-bridge/registry.json",
+  "dedupePath": "/Users/wulonglong/.qoder-yzj-bridge/dedupe.json",
+  "statePath": "/Users/wulonglong/.qoder-yzj-bridge/state.json",
+  "account": {
+    "sendMsgUrl": "https://www.yunzhijia.com/gateway/robot/webhook/send?yzjtype=0&yzjtoken=YOUR_TOKEN",
+    "inboundMode": "websocket"
+  },
+  "whitelist": ["yunzhijia_user_openid_1", "yunzhijia_user_openid_2"],
+  "maxPayloadBytes": 1048576,
+  "maxReplyLength": 2048,
+  "streamChunkChars": 1000,
+  "adapterTimeoutMs": 60000,
+  "heartbeatMs": 30000,
+  "staleMs": 120000
+}
