@@ -11,6 +11,8 @@
     "qoder-yzj-bridge": "src/index.ts"
   },
   "scripts": {
+    "start": "node --experimental-strip-types src/index.ts config.json",
+    "start:config": "node --experimental-strip-types src/index.ts",
     "test": "node --test --experimental-strip-types 'test/**/*.test.ts'",
     "typecheck": "tsc --noEmit"
   },

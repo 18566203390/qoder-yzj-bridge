@@ -27,7 +27,7 @@
 在桥接目录执行：
 
 ```bash
-cd /path/to/openclaw-yzj/qoder-yzj-bridge
+cd /Users/wulonglong/Documents/openclaw-yzj/qoder-yzj-bridge
 npm ci
 qodercli login
 qodercli --version
@@ -73,10 +73,16 @@ cp config.example.json config.json
 | `streamChunkChars` | Qoder 流式文本每段的目标最大字符数，不能大于 `maxReplyLength`。 |
 | `adapterTimeoutMs` | 单次 Qoder 任务最长等待时间，单位毫秒。 |
 
-启动服务：
+启动服务（默认使用本目录的 `config.json`）：
 
 ```bash
-node --experimental-strip-types src/index.ts config.json
+npm start
+```
+
+若需要使用其他配置文件：
+
+```bash
+npm run start:config -- /absolute/path/to/config.json
 ```
 
 看到 `[websocket] connected` 和 `[bridge] started in websocket mode` 后，表示桥接已经连上云之家。生产环境请用 `systemd`、supervisord 或容器编排保持该进程常驻，并在升级配置、桥接代码或 QoderCLI 后重启服务。
